@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vertical-lr {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+}
+
+.swiper-pagination-bullet {
+  @apply rounded-none bg-black opacity-100 h-2 w-2;
+}
+.swiper-pagination-bullet-active {
+  @apply w-4 bg-primary;
+}
+
+@media (min-width: 768px) {
+
+  .swiper-slide {
+    width: 19.125rem !important;
+    height: 16.375rem !important;
+  }
+  .swiper-slide p {
+    display: none;
+  }
+  .swiper-slide h3 {
+    display: none;
+  }
+  .swiper-slide a {
+    display: none;
+  }
+  .swiper-slide img {
+    filter: grayscale(100%);
+  }
+  .swiper-slide-active {
+  width: 39.75rem !important;
+  height: 27.4375rem !important;
+  }
+  .swiper-slide-active p {
+    display: block;
+  }
+  .swiper-slide-active h3 {
+    display: block;
+  }
+  .swiper-slide-active a {
+    display: block;
+  }
+  .swiper-slide-active img {
+    filter: grayscale(0%);
+  }
+}
