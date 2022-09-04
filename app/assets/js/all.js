@@ -46,3 +46,16 @@ const swiper = new Swiper('#artist-swiper', {
     slideShadows: false,
   },
 });
+
+const grid = document.querySelector('.ms-grid');
+const msnry = new Masonry(grid, {
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 156,
+});
+msnry.layout();
+const iso = new Isotope(grid, {
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows',
+});
