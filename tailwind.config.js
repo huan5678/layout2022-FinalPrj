@@ -43,9 +43,6 @@ module.exports = {
       opacity: {
         85: '0.85',
       },
-      aspectRatio: {
-        '4/3': '4 / 3',
-      },
     },
   },
   plugins: [
