@@ -1,10 +1,76 @@
----
-title: 市價排行榜
-layout: ./app/layout.ejs
-engine: ejs
-current: trending
----
-<section class="container">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    市價排行榜
+  </title>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body class="bg-gray select-none">
+  <header class="fixed w-full left-0 top-0 bg-gray z-30 lg:border-b lg:border-black">
+    <div class="flex justify-between items-center lg:items-stretch relative lg:container">
+      <a href="/" class="py-4 px-3 lg:px-0 lg:py-8" data-target="logo">
+        <h1
+            class="bg-[url('../images/logo.svg')] block w-[5.3125rem] lg:w-[11.875rem] h-[1.125rem] lg:h-10 bg-center bg-no-repeat bg-contain indent-[101%] overflow-hidden whitespace-nowrap">
+          ART NFT
+        </h1>
+      </a>
+      <div class="flex justify-end items-center lg:items-stretch w-full lg:w-auto">
+        <div data-target="searchBar" class="hidden lg:flex items-center lg:px-6 lg:border-l lg:border-black">
+          <button data-toggle="backButton" type="button" class="inline p-3 lg:hidden">
+            <i class="fa-solid fa-angle-left text-2xl leading-none"></i>
+          </button>
+          <input type="text"
+            class="bg-gray h-min py-3 w-64 lg:mx-6 lg:py-6 placeholder:text-gray-dark focus-within:outline-0"
+            placeholder="搜尋作品名稱、藝術家名稱">
+          </div>
+          <button type="button" data-toggle="searchButton"
+            class="inline p-3 transition duration-300 lg:pl-6 lg:pr-12 lg:py-8 lg:border-r lg:border-black hover:text-primary">
+            <i class="fa fa-search text-lg leading-none lg:text-2xl"></i>
+          </button>
+          <button data-toggle="menuButton" type="button" class="inline text-lg leading-none p-3 lg:py-8 lg:hidden">
+            <i class="fa fa-bars"></i>
+          </button>
+        <nav
+            data-target="menuList"
+            class="absolute -top-full left-0 w-full z-10 bg-white transition duration-300 -translate-y-full lg:static lg:bg-transparent lg:left-auto lg:h-full lg:z-auto lg:translate-y-0 lg:top-0">
+          <ul
+            class="container flex flex-col pb-6 lg:flex-row lg:pb-0 lg:px-0 lg:divide-x lg:divide-black lg:h-full">
+            <li
+                class="border-b border-black text-center text-lg font-bold group lg:border-b-0 lg:text-base">
+              <a href="#"
+                class="block py-6 transition duration-300 lg:py-10 lg:px-12 group-hover:text-primary">探索</a>
+            </li>
+            <li class="text-center text-lg font-bold group lg:text-base"><a href="./trending.html"
+                class="block py-6 transition duration-300 lg:py-10 lg:px-12 group-hover:text-primary">市值</a>
+            </li>
+            <li class="group">
+              <button type="button"
+                class="w-full bg-primary border border-black text-white py-3 lg:text-black lg:bg-transparent lg:border-none lg:py-10 lg:pl-12">
+                <i
+                  class="text-2xl leading-none fa fa-wallet hidden transition duration-300 lg:block group-hover:text-primary"></i>
+                <span class="block lg:hidden">連結錢包</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-[3.125rem] lg:pt-[6.5rem]">
+    <section class="container">
   <div class="flex flex-col pt-10 pb-12">
     <h1 class="font-bold text-3xl text-center mb-4">市價排行榜</h1>
     <p class="text-center">NFT系列藝術作品排行榜！全球注目指標</p>
@@ -789,3 +855,17 @@ current: trending
 
   </ul>
 </section>
+  </main>
+
+    <footer
+            class="relative py-6 text-center border-t border-black before:absolute before:top-0 before:bg-black before:left-0 before:h-1 before:w-full before:translate-y-1.5">
+      © ART NFT. All Rights Reserved
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="./assets/js/all.js" type="module"></script>
+</body>
+
+</html>
