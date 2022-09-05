@@ -48,14 +48,17 @@ const swiper = new Swiper('#artist-swiper', {
 });
 
 const grid = document.querySelector('.ms-grid');
-const msnry = new Masonry(grid, {
-  // options
-  itemSelector: '.grid-item',
-  columnWidth: 156,
-});
-msnry.layout();
-const iso = new Isotope(grid, {
-  // options
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows',
-});
+if (grid) {
+  const msnry = new Masonry(grid, {
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+  });
+  msnry.layout();
+  const iso = new Isotope(grid, {
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows',
+  });
+}

@@ -30,18 +30,22 @@ module.exports = {
         base: ['1rem', '1.5'], //
         lg: ['1.125rem', '1.5'], //
         xl: ['1.25rem', '1.5'], //
-        '2xl': ['1.5rem', '1.5'], //
-        '3xl': ['2rem', '1.5'], //2rem
-        '4xl': ['2.25rem', '1.5'],
-        '5xl': ['3rem', '1.5'], //
+        '2xl': ['1.5rem'], //
+        '3xl': ['2rem'], //2rem
+        '4xl': ['2.25rem'],
+        '5xl': ['3rem'], //
         '7xl': ['5rem'], //
       },
       fontFamily: {
-        squada: ['Squada One', ...fontFamily.sans],
+        squada: [ 'Squada One', ...fontFamily.sans ],
+        PaytoneOne: [ 'Paytone One', ...fontFamily.sans ],
       },
       opacity: {
         85: '0.85',
-      }
+      },
+      aspectRatio: {
+        '4/3': '4 / 3',
+      },
     },
   },
   plugins: [

@@ -1,0 +1,791 @@
+---
+title: 市價排行榜
+layout: ./app/layout.ejs
+engine: ejs
+current: trending
+---
+<section class="container">
+  <div class="flex flex-col pt-10 pb-12">
+    <h1 class="font-bold text-3xl text-center mb-4">市價排行榜</h1>
+    <p class="text-center">NFT系列藝術作品排行榜！全球注目指標</p>
+  </div>
+  <table class="hidden md:block table-auto w-full mb-20">
+    <thead>
+      <tr class="">
+        <th></th>
+        <th class="font-normal text-left pl-2.5 pb-4">系列作品名稱</th>
+        <th class="font-normal text-right pr-6 pb-4">價值</th>
+        <th class="font-normal text-right pr-6 pb-4">24h%</th>
+        <th class="font-normal text-right pr-6 pb-4">7d%</th>
+        <th class="font-normal text-right pr-6 pb-4">地板價</th>
+        <th class="font-normal text-right pr-6 pb-4">擁有者</th>
+        <th class="font-normal text-right pr-5 pb-4">作品數量</th>
+      </tr>
+    </thead>
+    <tbody class="border border-black bg-white w-full">
+      <tr class="align-middle border-b border-black">
+        <td class="border-r border-black px-4 py-6 font-PaytoneOne w-[3.5rem] text-center">1</td>
+        <td class="py-4 pl-4 w-1/3">
+          <img src="./assets/images/art13.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+          <h2 class="inline-block pl-4 font-bold">追求者送我的花</h2>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada pl-2">1,774.19</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-green">+220.49%</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-primary">-2.43%</span>
+        </td>
+        <td  class="w-2/12 text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada">2.90</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="font-squada">32.1K</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-5">
+          <span class="font-squada">1000</span>
+        </td>
+      </tr>
+      <tr class="align-middle border-b border-black">
+        <td class="border-r border-black px-4 py-6 font-PaytoneOne w-[3.5rem] text-center">2</td>
+        <td class="py-4 pl-4 w-1/3">
+          <img src="./assets/images/art06.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+          <h2 class="inline-block pl-4 font-bold">夏天的時候</h2>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada pl-2">1,524.89</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-green">+80.49%</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-primary">-2.43%</span>
+        </td>
+        <td  class="w-2/12 text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada">2.90</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="font-squada">32.1K</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-5">
+          <span class="font-squada">1000</span>
+        </td>
+      </tr>
+      <tr class="align-middle border-b border-black">
+        <td class="border-r border-black px-4 py-6 font-PaytoneOne w-[3.5rem] text-center">3</td>
+        <td class="py-4 pl-4 w-1/3">
+          <img src="./assets/images/art02.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+          <h2 class="inline-block pl-4 font-bold">海洋波度</h2>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada pl-2">1,400.59</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-primary">-3.92%</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-primary">-13.43%</span>
+        </td>
+        <td  class="w-2/12 text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada">2.90</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="font-squada">32.1K</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-5">
+          <span class="font-squada">1000</span>
+        </td>
+      </tr>
+      <tr class="align-middle border-b border-black">
+        <td class="border-r border-black px-4 py-6 font-PaytoneOne w-[3.5rem] text-center">4</td>
+        <td class="py-4 pl-4 w-1/3">
+          <img src="./assets/images/art03.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+          <h2 class="inline-block pl-4 font-bold">賴床真的很不好</h2>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada pl-2">1,224.88</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-primary">-9.23%</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-primary">-20.43%</span>
+        </td>
+        <td  class="w-2/12 text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada">2.90</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="font-squada">32.1K</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-5">
+          <span class="font-squada">1000</span>
+        </td>
+      </tr>
+      <tr class="align-middle border-b border-black">
+        <td class="border-r border-black px-4 py-6 font-PaytoneOne w-[3.5rem] text-center">5</td>
+        <td class="py-4 pl-4 w-1/3">
+          <img src="./assets/images/art01.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+          <h2 class="inline-block pl-4 font-bold">瞳孔:流動的脈絡</h2>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada pl-2">1,021.09</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-green">+83.49%</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-primary">-1.43%</span>
+        </td>
+        <td  class="w-2/12 text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada">2.90</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="font-squada">32.1K</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-5">
+          <span class="font-squada">1000</span>
+        </td>
+      </tr>
+      <tr class="align-middle border-b border-black">
+        <td class="border-r border-black px-4 py-6 font-PaytoneOne w-[3.5rem] text-center">6</td>
+        <td class="py-4 pl-4 w-1/3">
+          <img src="./assets/images/art12.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+          <h2 class="inline-block pl-4 font-bold">哭泣的時候</h2>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada pl-2">921.42</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-primary">-9.43%</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-green">+183.49%</span>
+        </td>
+        <td  class="w-2/12 text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada">2.90</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="font-squada">32.1K</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-5">
+          <span class="font-squada">1000</span>
+        </td>
+      </tr>
+      <tr class="align-middle border-b border-black">
+        <td class="border-r border-black px-4 py-6 font-PaytoneOne w-[3.5rem] text-center">7</td>
+        <td class="py-4 pl-4 w-1/3">
+          <img src="./assets/images/art14.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+          <h2 class="inline-block pl-4 font-bold">破碎的菠蘿麵包</h2>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada pl-2">888.88</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-green">+20.49%</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-primary">-0.43%</span>
+        </td>
+        <td  class="w-2/12 text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada">2.90</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="font-squada">32.1K</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-5">
+          <span class="font-squada">1000</span>
+        </td>
+      </tr>
+      <tr class="align-middle border-b border-black">
+        <td class="border-r border-black px-4 py-6 font-PaytoneOne w-[3.5rem] text-center">8</td>
+        <td class="py-4 pl-4 w-1/3">
+          <img src="./assets/images/art08.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+          <h2 class="inline-block pl-4 font-bold">人生中的貓咪們</h2>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada pl-2">770.23</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-green">+32.49%</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-green">+30.23</span>
+        </td>
+        <td  class="w-2/12 text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada">2.90</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="font-squada">32.1K</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-5">
+          <span class="font-squada">1000</span>
+        </td>
+      </tr>
+      <tr class="align-middle border-b border-black">
+        <td class="border-r border-black px-4 py-6 font-PaytoneOne w-[3.5rem] text-center">9</td>
+        <td class="py-4 pl-4 w-1/3">
+          <img src="./assets/images/art28.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+          <h2 class="inline-block pl-4 font-bold">髒兮兮的家</h2>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada pl-2">502.31</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-green">+13.49%</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-green">+50.23</span>
+        </td>
+        <td  class="w-2/12 text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada">2.90</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="font-squada">32.1K</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-5">
+          <span class="font-squada">1000</span>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <td class="border-r border-black px-4 py-6 font-PaytoneOne w-[3.5rem] text-center">10</td>
+        <td class="py-4 pl-4 w-1/3">
+          <img src="./assets/images/art16.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+          <h2 class="inline-block pl-4 font-bold">細胞小將</h2>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada pl-2">420.20</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-green">+54.49%</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="text-primary">-12.43%</span>
+        </td>
+        <td  class="w-2/12 text-right pr-6">
+          <i class="fa-brands fa-ethereum"></i>
+          <span class="font-squada">2.90</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-6">
+          <span class="font-squada">32.1K</span>
+        </td>
+        <td class="w-[8.625rem] text-right pr-5">
+          <span class="font-squada">1000</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="bg-white border border-black">
+    <li class="group">
+      <div class="relative flex border-b border-black">
+        <div class="absolute top-full left-full -translate-x-full -translate-y-full">
+          <button type="button" class="relative h-8 w-8 before:absolute before:h-0 before:w-0 before:top-full before:left-full before:border-t-[32px] before:border-t-transparent before:border-r-[32px] before:border-r-black before:-translate-x-full before:-translate-y-full group-active:before:border-r-primary">
+            <span class="sr-only">Open</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:hidden"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hidden absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:block"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
+          </button>
+        </div>
+          <div class="grid place-content-center font-PaytoneOne px-2 border-r border-black w-[2.375rem]">
+            <span class="text-2xl w-6 text-center leading-none">1</span>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <div class="flex items-center px-2 py-4">
+              <img src="./assets/images/art13.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+              <h2 class="inline-block pl-4 font-bold">系列作品的名稱</h2>
+            </div>
+            <div class="text-right pr-2 py-4">
+              <i class="fa-brands fa-ethereum"></i>
+              <span class="font-squada pl-2">1,774.19</span>
+            </div>
+          </div>
+      </div>
+      <ul class="hidden group-active:flex flex-wrap gap-y-4 p-4 border-b border-black">
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">24h%</h3>
+          <p class="text-green font-squada text-xl">+220.49%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">7d%</h3>
+          <p class="text-primary font-squada text-xl">-2.43%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">地板價</h3>
+          <div class="flex items-center gap-1">
+            <i class="fa-brands fa-ethereum"></i>
+            <p class="font-squada text-xl">2.90</p>
+          </div>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">擁有者</h3>
+          <p class="font-squada text-xl">32.1K</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">作品數量</h3>
+          <p class="font-squada text-xl">1000</p>
+        </li>
+      </ul>
+    </li>
+    <li class="group">
+      <div class="relative flex border-b border-black">
+        <div class="absolute top-full left-full -translate-x-full -translate-y-full">
+          <button type="button" class="relative h-8 w-8 before:absolute before:h-0 before:w-0 before:top-full before:left-full before:border-t-[32px] before:border-t-transparent before:border-r-[32px] before:border-r-black before:-translate-x-full before:-translate-y-full group-active:before:border-r-primary">
+            <span class="sr-only">Open</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:hidden"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hidden absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:block"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
+          </button>
+        </div>
+          <div class="grid place-content-center font-PaytoneOne px-2 border-r border-black w-[2.375rem]">
+            <span class="text-2xl w-6 text-center leading-none">2</span>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <div class="flex items-center px-2 py-4">
+              <img src="./assets/images/art06.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+              <h2 class="inline-block pl-4 font-bold">系列作品的名稱</h2>
+            </div>
+            <div class="text-right pr-2 py-4">
+              <i class="fa-brands fa-ethereum"></i>
+              <span class="font-squada pl-2">1,774.19</span>
+            </div>
+          </div>
+      </div>
+      <ul class="hidden group-active:flex flex-wrap gap-y-4 p-4 border-b border-black">
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">24h%</h3>
+          <p class="text-green font-squada text-xl">+220.49%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">7d%</h3>
+          <p class="text-primary font-squada text-xl">-2.43%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">地板價</h3>
+          <div class="flex items-center gap-1">
+            <i class="fa-brands fa-ethereum"></i>
+            <p class="font-squada text-xl">2.90</p>
+          </div>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">擁有者</h3>
+          <p class="font-squada text-xl">32.1K</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">作品數量</h3>
+          <p class="font-squada text-xl">1000</p>
+        </li>
+      </ul>
+    </li>
+    <li class="group">
+      <div class="relative flex border-b border-black">
+        <div class="absolute top-full left-full -translate-x-full -translate-y-full">
+          <button type="button" class="relative h-8 w-8 before:absolute before:h-0 before:w-0 before:top-full before:left-full before:border-t-[32px] before:border-t-transparent before:border-r-[32px] before:border-r-black before:-translate-x-full before:-translate-y-full group-active:before:border-r-primary">
+            <span class="sr-only">Open</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:hidden"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hidden absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:block"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
+          </button>
+        </div>
+          <div class="grid place-content-center font-PaytoneOne px-2 border-r border-black w-[2.375rem]">
+            <span class="text-2xl w-6 text-center leading-none">3</span>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <div class="flex items-center px-2 py-4">
+              <img src="./assets/images/art02.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+              <h2 class="inline-block pl-4 font-bold">系列作品的名稱</h2>
+            </div>
+            <div class="text-right pr-2 py-4">
+              <i class="fa-brands fa-ethereum"></i>
+              <span class="font-squada pl-2">1,774.19</span>
+            </div>
+          </div>
+      </div>
+      <ul class="hidden group-active:flex flex-wrap gap-y-4 p-4 border-b border-black">
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">24h%</h3>
+          <p class="text-green font-squada text-xl">+220.49%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">7d%</h3>
+          <p class="text-primary font-squada text-xl">-2.43%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">地板價</h3>
+          <div class="flex items-center gap-1">
+            <i class="fa-brands fa-ethereum"></i>
+            <p class="font-squada text-xl">2.90</p>
+          </div>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">擁有者</h3>
+          <p class="font-squada text-xl">32.1K</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">作品數量</h3>
+          <p class="font-squada text-xl">1000</p>
+        </li>
+      </ul>
+    </li>
+    <li class="group">
+      <div class="relative flex border-b border-black">
+        <div class="absolute top-full left-full -translate-x-full -translate-y-full">
+          <button type="button" class="relative h-8 w-8 before:absolute before:h-0 before:w-0 before:top-full before:left-full before:border-t-[32px] before:border-t-transparent before:border-r-[32px] before:border-r-black before:-translate-x-full before:-translate-y-full group-active:before:border-r-primary">
+            <span class="sr-only">Open</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:hidden"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hidden absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:block"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
+          </button>
+        </div>
+          <div class="grid place-content-center font-PaytoneOne px-2 border-r border-black w-[2.375rem]">
+            <span class="text-2xl w-6 text-center leading-none">4</span>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <div class="flex items-center px-2 py-4">
+              <img src="./assets/images/art03.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+              <h2 class="inline-block pl-4 font-bold">系列作品的名稱</h2>
+            </div>
+            <div class="text-right pr-2 py-4">
+              <i class="fa-brands fa-ethereum"></i>
+              <span class="font-squada pl-2">1,774.19</span>
+            </div>
+          </div>
+      </div>
+      <ul class="hidden group-active:flex flex-wrap gap-y-4 p-4 border-b border-black">
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">24h%</h3>
+          <p class="text-green font-squada text-xl">+220.49%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">7d%</h3>
+          <p class="text-primary font-squada text-xl">-2.43%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">地板價</h3>
+          <div class="flex items-center gap-1">
+            <i class="fa-brands fa-ethereum"></i>
+            <p class="font-squada text-xl">2.90</p>
+          </div>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">擁有者</h3>
+          <p class="font-squada text-xl">32.1K</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">作品數量</h3>
+          <p class="font-squada text-xl">1000</p>
+        </li>
+      </ul>
+    </li>
+    <li class="group">
+      <div class="relative flex border-b border-black">
+        <div class="absolute top-full left-full -translate-x-full -translate-y-full">
+          <button type="button" class="relative h-8 w-8 before:absolute before:h-0 before:w-0 before:top-full before:left-full before:border-t-[32px] before:border-t-transparent before:border-r-[32px] before:border-r-black before:-translate-x-full before:-translate-y-full group-active:before:border-r-primary">
+            <span class="sr-only">Open</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:hidden"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hidden absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:block"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
+          </button>
+        </div>
+          <div class="grid place-content-center font-PaytoneOne px-2 border-r border-black w-[2.375rem]">
+            <span class="text-2xl w-6 text-center leading-none">5</span>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <div class="flex items-center px-2 py-4">
+              <img src="./assets/images/art01.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+              <h2 class="inline-block pl-4 font-bold">系列作品的名稱</h2>
+            </div>
+            <div class="text-right pr-2 py-4">
+              <i class="fa-brands fa-ethereum"></i>
+              <span class="font-squada pl-2">1,774.19</span>
+            </div>
+          </div>
+      </div>
+      <ul class="hidden group-active:flex flex-wrap gap-y-4 p-4 border-b border-black">
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">24h%</h3>
+          <p class="text-green font-squada text-xl">+220.49%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">7d%</h3>
+          <p class="text-primary font-squada text-xl">-2.43%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">地板價</h3>
+          <div class="flex items-center gap-1">
+            <i class="fa-brands fa-ethereum"></i>
+            <p class="font-squada text-xl">2.90</p>
+          </div>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">擁有者</h3>
+          <p class="font-squada text-xl">32.1K</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">作品數量</h3>
+          <p class="font-squada text-xl">1000</p>
+        </li>
+      </ul>
+    </li>
+    <li class="group">
+      <div class="relative flex border-b border-black">
+        <div class="absolute top-full left-full -translate-x-full -translate-y-full">
+          <button type="button" class="relative h-8 w-8 before:absolute before:h-0 before:w-0 before:top-full before:left-full before:border-t-[32px] before:border-t-transparent before:border-r-[32px] before:border-r-black before:-translate-x-full before:-translate-y-full group-active:before:border-r-primary">
+            <span class="sr-only">Open</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:hidden"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hidden absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:block"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
+          </button>
+        </div>
+          <div class="grid place-content-center font-PaytoneOne px-2 border-r border-black w-[2.375rem]">
+            <span class="text-2xl w-6 text-center leading-none">6</span>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <div class="flex items-center px-2 py-4">
+              <img src="./assets/images/art12.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+              <h2 class="inline-block pl-4 font-bold">系列作品的名稱</h2>
+            </div>
+            <div class="text-right pr-2 py-4">
+              <i class="fa-brands fa-ethereum"></i>
+              <span class="font-squada pl-2">1,774.19</span>
+            </div>
+          </div>
+      </div>
+      <ul class="hidden group-active:flex flex-wrap gap-y-4 p-4 border-b border-black">
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">24h%</h3>
+          <p class="text-green font-squada text-xl">+220.49%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">7d%</h3>
+          <p class="text-primary font-squada text-xl">-2.43%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">地板價</h3>
+          <div class="flex items-center gap-1">
+            <i class="fa-brands fa-ethereum"></i>
+            <p class="font-squada text-xl">2.90</p>
+          </div>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">擁有者</h3>
+          <p class="font-squada text-xl">32.1K</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">作品數量</h3>
+          <p class="font-squada text-xl">1000</p>
+        </li>
+      </ul>
+    </li>
+    <li class="group">
+      <div class="relative flex border-b border-black">
+        <div class="absolute top-full left-full -translate-x-full -translate-y-full">
+          <button type="button" class="relative h-8 w-8 before:absolute before:h-0 before:w-0 before:top-full before:left-full before:border-t-[32px] before:border-t-transparent before:border-r-[32px] before:border-r-black before:-translate-x-full before:-translate-y-full group-active:before:border-r-primary">
+            <span class="sr-only">Open</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:hidden"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hidden absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:block"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
+          </button>
+        </div>
+          <div class="grid place-content-center font-PaytoneOne px-2 border-r border-black w-[2.375rem]">
+            <span class="text-2xl w-6 text-center leading-none">7</span>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <div class="flex items-center px-2 py-4">
+              <img src="./assets/images/art14.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+              <h2 class="inline-block pl-4 font-bold">系列作品的名稱</h2>
+            </div>
+            <div class="text-right pr-2 py-4">
+              <i class="fa-brands fa-ethereum"></i>
+              <span class="font-squada pl-2">1,774.19</span>
+            </div>
+          </div>
+      </div>
+      <ul class="hidden group-active:flex flex-wrap gap-y-4 p-4 border-b border-black">
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">24h%</h3>
+          <p class="text-green font-squada text-xl">+220.49%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">7d%</h3>
+          <p class="text-primary font-squada text-xl">-2.43%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">地板價</h3>
+          <div class="flex items-center gap-1">
+            <i class="fa-brands fa-ethereum"></i>
+            <p class="font-squada text-xl">2.90</p>
+          </div>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">擁有者</h3>
+          <p class="font-squada text-xl">32.1K</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">作品數量</h3>
+          <p class="font-squada text-xl">1000</p>
+        </li>
+      </ul>
+    </li>
+    <li class="group">
+      <div class="relative flex border-b border-black">
+        <div class="absolute top-full left-full -translate-x-full -translate-y-full">
+          <button type="button" class="relative h-8 w-8 before:absolute before:h-0 before:w-0 before:top-full before:left-full before:border-t-[32px] before:border-t-transparent before:border-r-[32px] before:border-r-black before:-translate-x-full before:-translate-y-full group-active:before:border-r-primary">
+            <span class="sr-only">Open</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:hidden"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hidden absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:block"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
+          </button>
+        </div>
+          <div class="grid place-content-center font-PaytoneOne px-2 border-r border-black w-[2.375rem]">
+            <span class="text-2xl w-6 text-center leading-none">8</span>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <div class="flex items-center px-2 py-4">
+              <img src="./assets/images/art08.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+              <h2 class="inline-block pl-4 font-bold">系列作品的名稱</h2>
+            </div>
+            <div class="text-right pr-2 py-4">
+              <i class="fa-brands fa-ethereum"></i>
+              <span class="font-squada pl-2">1,774.19</span>
+            </div>
+          </div>
+      </div>
+      <ul class="hidden group-active:flex flex-wrap gap-y-4 p-4 border-b border-black">
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">24h%</h3>
+          <p class="text-green font-squada text-xl">+220.49%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">7d%</h3>
+          <p class="text-primary font-squada text-xl">-2.43%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">地板價</h3>
+          <div class="flex items-center gap-1">
+            <i class="fa-brands fa-ethereum"></i>
+            <p class="font-squada text-xl">2.90</p>
+          </div>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">擁有者</h3>
+          <p class="font-squada text-xl">32.1K</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">作品數量</h3>
+          <p class="font-squada text-xl">1000</p>
+        </li>
+      </ul>
+    </li>
+    <li class="group">
+      <div class="relative flex border-b border-black">
+        <div class="absolute top-full left-full -translate-x-full -translate-y-full">
+          <button type="button" class="relative h-8 w-8 before:absolute before:h-0 before:w-0 before:top-full before:left-full before:border-t-[32px] before:border-t-transparent before:border-r-[32px] before:border-r-black before:-translate-x-full before:-translate-y-full group-active:before:border-r-primary">
+            <span class="sr-only">Open</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:hidden"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hidden absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:block"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
+          </button>
+        </div>
+          <div class="grid place-content-center font-PaytoneOne px-2 border-r border-black w-[2.375rem]">
+            <span class="text-2xl w-6 text-center leading-none">9</span>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <div class="flex items-center px-2 py-4">
+              <img src="./assets/images/art11.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+              <h2 class="inline-block pl-4 font-bold">系列作品的名稱</h2>
+            </div>
+            <div class="text-right pr-2 py-4">
+              <i class="fa-brands fa-ethereum"></i>
+              <span class="font-squada pl-2">1,774.19</span>
+            </div>
+          </div>
+      </div>
+      <ul class="hidden group-active:flex flex-wrap gap-y-4 p-4 border-b border-black">
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">24h%</h3>
+          <p class="text-green font-squada text-xl">+220.49%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">7d%</h3>
+          <p class="text-primary font-squada text-xl">-2.43%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">地板價</h3>
+          <div class="flex items-center gap-1">
+            <i class="fa-brands fa-ethereum"></i>
+            <p class="font-squada text-xl">2.90</p>
+          </div>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">擁有者</h3>
+          <p class="font-squada text-xl">32.1K</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">作品數量</h3>
+          <p class="font-squada text-xl">1000</p>
+        </li>
+      </ul>
+    </li>
+    <li class="group">
+      <div class="relative flex border-b border-black">
+        <div class="absolute top-full left-full -translate-x-full -translate-y-full">
+          <button type="button" class="relative h-8 w-8 before:absolute before:h-0 before:w-0 before:top-full before:left-full before:border-t-[32px] before:border-t-transparent before:border-r-[32px] before:border-r-black before:-translate-x-full before:-translate-y-full group-active:before:border-r-primary">
+            <span class="sr-only">Open</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:hidden"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hidden absolute h-2.5 w-2.5 fill-white left-full top-full translate-x-[calc(-100%-4px)] translate-y-[calc(-100%-4px)] group-active:block"><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
+          </button>
+        </div>
+          <div class="grid place-content-center font-PaytoneOne px-2 border-r border-black w-[2.375rem]">
+            <span class="text-2xl w-6 text-center leading-none">10</span>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <div class="flex items-center px-2 py-4">
+              <img src="./assets/images/art16.jpg" class="inline-block rounded-full aspect-square h-12 object-cover" alt="">
+              <h2 class="inline-block pl-4 font-bold">系列作品的名稱</h2>
+            </div>
+            <div class="text-right pr-2 py-4">
+              <i class="fa-brands fa-ethereum"></i>
+              <span class="font-squada pl-2">1,774.19</span>
+            </div>
+          </div>
+      </div>
+      <ul class="hidden group-active:flex flex-wrap gap-y-4 p-4 border-b border-black">
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">24h%</h3>
+          <p class="text-green font-squada text-xl">+220.49%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/2">
+          <h3 class="text-sm">7d%</h3>
+          <p class="text-primary font-squada text-xl">-2.43%</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">地板價</h3>
+          <div class="flex items-center gap-1">
+            <i class="fa-brands fa-ethereum"></i>
+            <p class="font-squada text-xl">2.90</p>
+          </div>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">擁有者</h3>
+          <p class="font-squada text-xl">32.1K</p>
+        </li>
+        <li class="flex flex-col justify-center items-center gap-2 w-1/3">
+          <h3 class="text-sm">作品數量</h3>
+          <p class="font-squada text-xl">1000</p>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</section>
